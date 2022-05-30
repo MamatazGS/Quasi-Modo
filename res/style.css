@@ -1,0 +1,282 @@
+@import url("https://cdn.linearicons.com/free/1.0.0/icon-font.min.css");
+html,
+body {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+body header {
+  display: flex;
+  flex-direction: row-reverse;
+  background-image: linear-gradient(to right, rgb(37, 30, 81), #363636);
+  height: 30px;
+  -webkit-app-region: drag;
+}
+body header ul {
+  width: 1%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body header ul li {
+  display: inline-block;
+  height: 100%;
+  line-height: 30px;
+  font-family: "Ubuntu";
+  font-size: 18px;
+  font-weight: 100px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  vertical-align: top;
+  -webkit-app-region: no-drag;
+  box-sizing: border-box;
+}
+body header ul li.active {
+  background: #363636;
+}
+body header ul li:not(.active) {
+  background: #6B6B6B;
+}
+body header ul li:not(:first-child) {
+  margin-left: -4px;
+}
+body header ul li.add-tab {
+  background: transparent;
+  font-size: 24px;
+}
+body header ul li:hover {
+  background: white;
+}
+body header ul li a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  -webkit-app-region: no-drag;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+body header ul:last-of-type {
+  background: #363636;
+  width: 235px;
+  padding: 0 10px;
+  margin: 0 0;
+}
+body header ul:last-of-type li {
+  display: inline-block;
+  height: 90%;
+  background: white;
+  margin: 0 5px;
+  width: 40px;
+  line-height: 30px;
+  font-family: "Ubuntu";
+  font-size: 18px;
+  font-weight: 100px;
+  padding: 0 13px;
+  color: white;
+  vertical-align: middle;
+  -webkit-app-region: no-drag;
+  box-sizing: border-box;
+}
+body header ul:last-of-type li:not(.active) {
+  background: #6B6B6B;
+}
+body header ul:last-of-type li:not(:first-child) {
+  margin-left: -4px;
+}
+body header ul:last-of-type li:hover {
+  background: #6A0303;
+}
+body header ul:last-of-type li a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 -9px;
+  -webkit-app-region: no-drag;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+body x-tab {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+body x-tab nav {
+  flex: 0 0 140px;
+  width: 100%;
+  background: #363636;
+  display: flex;
+  flex-direction: column;
+}
+body x-tab nav .controls {
+  flex-grow: 1;
+}
+body x-tab nav .navigation {
+  flex: 0 0 40px;
+  height: auto;
+  width: 100%;
+  background: #404040;
+  display: flex;
+  flex-direction: row;
+}
+body x-tab nav .navigation div {
+  width: 50%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  padding: 0 0px;
+}
+body x-tab nav .navigation div label {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 7px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgb(71, 71, 71);
+  color: #ffffff;
+}
+body x-tab nav .navigation div label:hover {
+  background-color: rgb(255, 154, 154);
+  color: #2d0000;
+}
+body x-tab nav .navigation div label input {
+  display: none;
+}
+body x-tab nav .navigation div a a {
+  color: #ffffff;
+  line-height: 30px;
+  font-size: 12px;
+  font-family: "Ubuntu";
+  font-weight: 50px;
+}
+body main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+body main aside {
+  color: white;
+  font-family: "Ubuntu";
+  width: 240px;
+  flex: 0 0 240px;
+  background: #363636;
+  padding-top: 10px;
+}
+body main aside > a {
+  padding-left: 20px;
+}
+body main aside a {
+  padding-left: 40px;
+  display: block;
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+body main aside div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  list-style: none;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+}
+body main aside div p {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-bottom: 4px;
+  height: 15px;
+  font-family: "Ubuntu";
+  font-size: 10px;
+  font-weight: 50px;
+  cursor: pointer;
+}
+body main aside div p:hover {
+  padding-bottom: 15px;
+  background: red;
+}
+body main article {
+  flex-grow: 1;
+  background: #454545;
+}
+body main article div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  height: 500px;
+  list-style: none;
+}
+body main article div div {
+  overflow: hidden;
+  max-height: 120px;
+  margin-left: 15px;
+}
+body main article div div div.ltc-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 0, 5px, 0, 0;
+  width: 100px;
+  height: 60px;
+  overflow: hidden;
+}
+body main article div div div.ltc-container input {
+  overflow: hidden;
+  border: solid 2px rgba(104, 0, 0, 0.45);
+  width: 90px;
+  border-radius: 5px;
+}
+body main article div div div.ltc-container a {
+  overflow: hidden;
+  color: white;
+  width: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+body main article div div div.song-container {
+  border: solid 8px transparent;
+  background: #2d2d2d;
+  border-radius: 0.8rem;
+  width: auto;
+  height: auto;
+  margin: 2px, 2px, 2px, 2px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main article div div div.song-container input {
+  overflow: hidden;
+  border: solid 2px black;
+}
+
+/*# sourceMappingURL=style.css.map */

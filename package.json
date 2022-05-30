@@ -1,0 +1,29 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "build": "babel header-functions.js -d dist",
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^18.2.3",
+    "electron-packager": "^15.5.1"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.8",
+    "fs": "0.0.1-security",
+    "sass": "^1.51.0"
+  }
+}

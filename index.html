@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <link href="res/style.css" rel="stylesheet">
+    <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
+    <title>Hello World!</title>
+    <script src="renderer.js"></script>
+  </head>
+  <body>
+    <header>
+      <a></a>
+      <ul>
+      </ul>
+      <ul>
+        <li id="minimBtn"><a>-</a></li>
+        <li id="resizBtn"><a>O</a></li>
+        <li id="closeBtn"><a>X</a></li>
+      </ul>
+    </header>
+    <x-tab>
+      <nav>
+        <div class="navigation">
+            <div class="directories-container">
+              <label class="uploadLabelRed">
+                <input id="srcDirBtn" type="file" class="uploadButton" webkitdirectory/>
+                Select TESTI folder
+              </label>
+              <a id="currentPathDisplay"></a>
+              <div id="history-directories-container"></div>
+            </div>
+            <div class="controls-container">
+              <label class="uploadLabelRed">
+                <input id="applyBtn" type="button" value="apply"></input>
+                Apply
+             </label>
+            </div>
+        </div>
+
+      </nav>
+      <main>
+        <aside>
+          <a>SONGS FILES<span class="lnr lnr-chevron-down"></span></a>
+          <div id="songs-container"></div>
+        </aside>
+        <article>
+          <div id="song-ltc-container"></div>
+        </article>
+      </main>
+    </x-tab>
+  </body>
+</html>
