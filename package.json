@@ -24,6 +24,6 @@
   "dependencies": {
     "@electron/remote": "^2.0.8",
     "fs": "0.0.1-security",
-    "sass": "^1.51.0"
+    "sass": "^1.54.4"
   }
 }
